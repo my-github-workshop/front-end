@@ -18,8 +18,8 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $PROJECT_NAME
     - sudo /opt/google-cloud-sdk/bin/gcloud docker pull us.gcr.io/${PROJECT_NAME}/workshop-base
     - sudo chown -R ubuntu:ubuntu /home/ubuntu/.dockercfg
-    - docker build -t us.gcr.io/${PROJECT_NAME}/front-end:$(cat VERSION) .
-    - docker tag us.gcr.io/${PROJECT_NAME}/front-end:$(cat VERSION) us.gcr.io/${PROJECT_NAME}/front-end:latest
+    - docker build -t us.gcr.io/${PROJECT_NAME}/front-end:$CIRCLE_SHA1 .
+    - docker tag us.gcr.io/${PROJECT_NAME}/front-end:$CIRCLE_SHA1 us.gcr.io/${PROJECT_NAME}/front-end:latest
 
 database:
   override:
