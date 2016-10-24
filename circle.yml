@@ -34,3 +34,4 @@ deployment:
     branch: master
     commands:
       - ./deploy.sh
+      - curl -q -X POST https://circleci.com/api/v1/project/my-github-workshop/back-end?circle-token=$BACK_END_TRIGGER_TOKEN
