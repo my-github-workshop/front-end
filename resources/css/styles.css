@@ -6,3 +6,14 @@ h1 {
 	/* align the text to the center */
 	text-align: center;
 }
+
+img {
+	width: 80px;
+	height: 80px;
+}
+
+body {
+	background-image: url("https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/13921125_1643432815972528_3211920931560527225_n.jpg?oh=2aed2b3d73608c42cb4a9848e531ca84&oe=588BB093");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
